@@ -1,0 +1,69 @@
+/* Estilos CSS customizados para a paleta de cores e animações */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Cor de fundo suave */
+    color: #334155; /* Cor de texto padrão */
+}
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem; /* Tamanho do título da seção */
+    font-weight: 700;
+    color: #082640; /* Cor mais escura para o título, da nova paleta */
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background-color: #32C8D9; /* Cor de destaque, da nova paleta */
+    border-radius: 9999px; /* Cantos arredondados para a linha */
+}
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Animação para a seção Hero */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
