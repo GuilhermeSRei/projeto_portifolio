@@ -1,6 +1,11 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* Estilos CSS customizados para a paleta de cores e animações */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat';
     background-color: #f8fafc; /* Cor de fundo suave */
     color: #334155; /* Cor de texto padrão */
 }
